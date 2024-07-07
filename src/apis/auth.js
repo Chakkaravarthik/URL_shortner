@@ -1,8 +1,9 @@
-const URL = 'http://localhost:7000'
+
+
 // user register 
 const usersignup = async (userdata) =>{
     try{
-        const res = await fetch(`${URL}/register`,{
+        const res = await fetch(`${import.meta.env.VITE_LOCAL_URL}/register`,{
             method: "POST",
                 body: JSON.stringify(userdata),
                 headers: {
@@ -17,7 +18,7 @@ const usersignup = async (userdata) =>{
 
 const userlogin = async (logindata)=>{
     try{
-        const res= await fetch(`${URL}/login`,{
+        const res= await fetch(`${import.meta.env.VITE_LOCAL_URL}/login`,{
             method: "POST",
                 body: JSON.stringify(logindata),
                 headers: {
@@ -33,7 +34,7 @@ const userlogin = async (logindata)=>{
 
 const shorturl = async (url)=>{
     try{
-        const res= await fetch(`${URL}/shorten-url`,{
+        const res= await fetch(`${import.meta.env.VITE_LOCAL_URL}/shorten-url`,{
             method: "POST",
                 body: JSON.stringify({url}),
                 headers: {
@@ -48,7 +49,7 @@ const shorturl = async (url)=>{
 
 const redirecturl = async(url_id)=>{
     try{
-        const res = await fetch(`${URL}/redirect`,{
+        const res = await fetch(`${import.meta.env.VITE_LOCAL_URL}/redirect`,{
             method: "POST",
             body: JSON.stringify({url_id}),
             headers: {
