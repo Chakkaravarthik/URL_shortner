@@ -11,7 +11,7 @@ const AppRoutes = () =>{
             <BrowserRouter>
                 <Routes>
                     <Route path='/home' element={<Homerouter/>}/>;
-                    <Route path='/login' element={<LoginForm />}/>;
+                    <Route path='/' element={<LoginForm />}/>;
                     <Route path='/register' element={<RegisterForm />}/>;
                     <Route path='/shorten-url' element={<UrlShortener />}/>;
                     <Route path='/shorturl/:url_id' element={<Redirecturl />}/>;
