@@ -30,7 +30,7 @@ const LoginForm = () => {
 
   return (
     <div className="container-fluid mt-5 d-flex align-items-center justify-content-center" >
-      <div className='card p-4 shadow-lg' style={{width:'50vw', height:"50vh"}}>
+      <div className='card p-4 shadow-lg' style={{width:'50vw', height:"60vh"}}>
         <h2 className=''>Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">

@@ -26,7 +26,7 @@ const RegisterForm = () => {
 
   return (
     <div className="container-fluid mt-5 d-flex align-items-center justify-content-center">
-      <div className='card p-4 shadow-lg' style={{width:'50vw', height:"50vh"}}>
+      <div className='card p-4 shadow-lg' style={{width:'50vw', height:"70vh"}}>
         <h2>Register Form</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
